@@ -17,7 +17,7 @@ To compile examples for KEIL, download KEIL evaluation version with 32kb limit.
 
 The bootloader sources are in KEIL directory.
 
-All the examples need NEED USB-TTL adapter to get the feedback.
+Most of the examples need NEED USB-TTL adapter to get the feedback.
 You need to connect the adapter like this:
 
 USB-TTL ADAPTER            MatchboxARM
