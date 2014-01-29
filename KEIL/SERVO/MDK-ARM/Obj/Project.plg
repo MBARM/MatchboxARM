@@ -1,0 +1,11 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\Je\Dropbox\Vlad\MatchboxARM\KEIL\SERVO\MDK-ARM\Project.uvproj
+Project File Date:  01/03/2014
+
+<h2>Output:</h2>
+Clean started: Project: 'Project'
+   deleting intermediate output files for target 'SERVO'

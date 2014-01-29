@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F103C8 -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\workspace -I..\..\..\workspace\TIM3_PWM_CH3_CH4 -I..\..\..\workspace\TIM3_PWM_CH3_CH4\cmsis_boot -I..\..\.. -I..\..\..\workspace\TIM3_PWM_CH3_CH4\stm_lib -I..\..\..\workspace\TIM3_PWM_CH3_CH4\cmsis -I..\..\..\workspace\TIM3_PWM_CH3_CH4\stm_lib\inc">
+      <target file="stm32f10x_tim.o" lastModified="1437de782a0">
+         <source file="..\..\..\stm_lib\src\stm32f10x_tim.c" lastModified="1437de778ac"/>
+      </target>
+      <target file="core_cm3.o" lastModified="1437de782da">
+         <source file="..\..\..\cmsis\core_cm3.c" lastModified="1437da390a0"/>
+      </target>
+      <target file="system_stm32f10x.o" lastModified="1437de78321">
+         <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="1437da7ce90"/>
+      </target>
+      <target file="main.o" lastModified="1437de7840b">
+         <source file="..\..\..\main.c" lastModified="1437de6a3b2"/>
+      </target>
+      <target file="stm32f10x_gpio.o" lastModified="1437de783bf">
+         <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="1437da3afe0"/>
+      </target>
+      <target file="stm32f10x_usart.o" lastModified="1437de784ea">
+         <source file="..\..\..\stm_lib\src\stm32f10x_usart.c" lastModified="1437dc46eb0"/>
+      </target>
+      <target file="stm32f10x_it.o" lastModified="1437de7852a">
+         <source file="..\..\..\cmsis_boot\stm32f10x_it.c" lastModified="12bc10e66c0"/>
+      </target>
+      <target file="stm32f10x_rcc.o" lastModified="1437de78482">
+         <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="1437da3a810"/>
+      </target>
+      <target file="startup_stm32f10x_md.o" lastModified="1437de7835b">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="1437da66f00"/>
+      </target>
+      <target file="misc.o" lastModified="1437de78574">
+         <source file="..\..\..\stm_lib\src\misc.c" lastModified="1437de774eb"/>
+      </target>
+   </processor>
+</history>

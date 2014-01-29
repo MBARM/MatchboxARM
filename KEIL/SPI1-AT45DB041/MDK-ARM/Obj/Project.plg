@@ -1,0 +1,11 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\Je\Dropbox\Vlad\MatchboxARM\KEIL\SPI1-AT45DB041\MDK-ARM\Project.uvproj
+Project File Date:  12/01/2013
+
+<h2>Output:</h2>
+Clean started: Project: 'Project'
+   deleting intermediate output files for target 'GPIO_Blink'

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F103C8 -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\workspace\TIM2_INTERRUPT_BLINK!!!\cmsis -I..\..\..\workspace\TIM2_INTERRUPT_BLINK!!!\stm_lib\inc -I..\..\..\workspace\TIM2_INTERRUPT_BLINK!!!\stm_lib -I..\..\..\workspace\TIM2_INTERRUPT_BLINK!!! -I..\..\..\workspace -I..\..\..\workspace\TIM2_INTERRUPT_BLINK!!!\cmsis_boot -I..\..\..">
+      <target file="stm32f10x_tim.o" lastModified="1437de4fe5c">
+         <source file="..\..\..\stm_lib\src\stm32f10x_tim.c" lastModified="1437dd554cb"/>
+      </target>
+      <target file="core_cm3.o" lastModified="1437de4fea6">
+         <source file="..\..\..\cmsis\core_cm3.c" lastModified="1437da390a0"/>
+      </target>
+      <target file="system_stm32f10x.o" lastModified="1437de4fef3">
+         <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="1437da7ce90"/>
+      </target>
+      <target file="main.o" lastModified="1437de4ffc1">
+         <source file="..\..\..\main.c" lastModified="1437dd6d4b7"/>
+      </target>
+      <target file="stm32f10x_gpio.o" lastModified="1437de4ff7d">
+         <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="1437da3afe0"/>
+      </target>
+      <target file="stm32f10x_usart.o" lastModified="1437de50097">
+         <source file="..\..\..\stm_lib\src\stm32f10x_usart.c" lastModified="1437dc46eb0"/>
+      </target>
+      <target file="stm32f10x_it.o" lastModified="1437de5010d">
+         <source file="..\..\..\cmsis_boot\stm32f10x_it.c" lastModified="142b81e1eb8"/>
+      </target>
+      <target file="stm32f10x_rcc.o" lastModified="1437de5002e">
+         <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="1437da3a810"/>
+      </target>
+      <target file="startup_stm32f10x_md.o" lastModified="1437de4ff1c">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="1437da66f00"/>
+      </target>
+      <target file="misc.o" lastModified="1437de50163">
+         <source file="..\..\..\stm_lib\src\misc.c" lastModified="1437dd55906"/>
+      </target>
+   </processor>
+</history>

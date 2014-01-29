@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F103C8 -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\workspace\I2C\cmsis -I..\..\..\workspace -I..\..\..\workspace\I2C\stm_lib\inc -I..\..\..\workspace\I2C\MPU6050 -I..\..\..\workspace\I2C\stm_lib -I..\..\.. -I..\..\..\workspace\I2C\cmsis_boot -I..\..\..\workspace\I2C">
+      <target file="MPU6050.o" lastModified="1437df6b97b">
+         <source file="..\..\..\MPU6050\MPU6050.c" lastModified="143132c7920"/>
+      </target>
+      <target file="stm32f10x_i2c.o" lastModified="1437df6b9e5">
+         <source file="..\..\..\stm_lib\src\stm32f10x_i2c.c" lastModified="1437df50f5d"/>
+      </target>
+      <target file="core_cm3.o" lastModified="1437df6b712">
+         <source file="..\..\..\cmsis\core_cm3.c" lastModified="1437da390a0"/>
+      </target>
+      <target file="system_stm32f10x.o" lastModified="1437df6b760">
+         <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="1437da7ce90"/>
+      </target>
+      <target file="main.o" lastModified="1437df6b844">
+         <source file="..\..\..\main.c" lastModified="1437df48232"/>
+      </target>
+      <target file="stm32f10x_gpio.o" lastModified="1437df6b7e6">
+         <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="1437da3afe0"/>
+      </target>
+      <target file="stm32f10x_usart.o" lastModified="1437df6b91e">
+         <source file="..\..\..\stm_lib\src\stm32f10x_usart.c" lastModified="1437dc46eb0"/>
+      </target>
+      <target file="stm32f10x_rcc.o" lastModified="1437df6b8b0">
+         <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="1437da3a810"/>
+      </target>
+      <target file="startup_stm32f10x_md.o" lastModified="1437df6b789">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="1437da66f00"/>
+      </target>
+   </processor>
+</history>

@@ -1,0 +1,15 @@
+.\Obj\mpu6050.o: ..\USER\MPU6050\MPU6050.c
+.\Obj\mpu6050.o: ..\USER\MPU6050\MPU6050.h
+.\Obj\mpu6050.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\Obj\mpu6050.o: ..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+.\Obj\mpu6050.o: C:\Keil\ARM\RV31\Inc\stdint.h
+.\Obj\mpu6050.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+.\Obj\mpu6050.o: ..\USER\stm32f10x_conf.h
+.\Obj\mpu6050.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
+.\Obj\mpu6050.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\Obj\mpu6050.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h
+.\Obj\mpu6050.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h
+.\Obj\mpu6050.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h
+.\Obj\mpu6050.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
+.\Obj\mpu6050.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\Obj\mpu6050.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_i2c.h

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=Template.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\Template -TC:\CooCox\CoIDE\configuration\ProgramData\Template/arm-gcc-link.ld -g">
+      <target file="Template.elf" lastModified="1437dcf626f">
+         <source file="..\obj\core_cm3.o" lastModified="1437dcf5df4"/>
+         <source file="..\obj\system_stm32f10x.o" lastModified="1437dcf5e43"/>
+         <source file="..\obj\startup_stm32f10x_md.o" lastModified="1437dcf5e6a"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="1437dcf5ec4"/>
+         <source file="..\obj\main.o" lastModified="1437dcf5f11"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="1437dcf5f76"/>
+         <source file="..\obj\stm32f10x_exti.o" lastModified="1437dcf5fbd"/>
+         <source file="..\obj\stm32f10x_usart.o" lastModified="1437dcf602a"/>
+         <source file="..\obj\misc.o" lastModified="1437dcf6075"/>
+      </target>
+   </processor>
+</history>
