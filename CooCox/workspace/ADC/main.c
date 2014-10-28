@@ -16,39 +16,39 @@ int main(void)
 
     RCC_APB2PeriphClockCmd( RCC_APB2Periph_GPIOB , ENABLE); 	
     
-   	//LED0 -> PB0, LED1 -> PB1 
+    //LED0 -> PB0, LED1 -> PB1 
     GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1;
     GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
     GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP; 
     GPIO_Init(GPIOB, &GPIO_InitStructure);
 
 
- 	USART1_Init();
-	USART1_Print("\r\n");
-	USART1_Print("*************************************************************\r\n");
+    USART1_Init();
+    USART1_Print("\r\n");
+    USART1_Print("*************************************************************\r\n");
     USART1_Print("*                                                           *\r\n");
-	USART1_Print("*  Thank you for using MatchboxARM Development Board ! ^_^  *\r\n");
-	USART1_Print("*                                                           *\r\n");
-	USART1_Print("*************************************************************\r\n"); 
+    USART1_Print("*  Thank you for using MatchboxARM Development Board ! ^_^  *\r\n");
+    USART1_Print("*                                                           *\r\n");
+    USART1_Print("*************************************************************\r\n"); 
 
     ADC_Configuration();
 
     k = 0;
     while (1)
-	{
-		/* LED0-ON LED1-OFF */
-		GPIO_SetBits(GPIOB , GPIO_Pin_0);
-		GPIO_ResetBits(GPIOB , GPIO_Pin_1);
-		Delay(0xfffff);
+    {
+        /* LED0-ON LED1-OFF */
+	GPIO_SetBits(GPIOB , GPIO_Pin_0);
+	GPIO_ResetBits(GPIOB , GPIO_Pin_1);
+	Delay(0xfffff);
         Delay(k);
         
-		/* LED0-OFF LED1-ON */
-		GPIO_ResetBits(GPIOB , GPIO_Pin_0);
-		GPIO_SetBits(GPIOB , GPIO_Pin_1);
-		Delay(0xfffff);
+	/* LED0-OFF LED1-ON */
+	GPIO_ResetBits(GPIOB , GPIO_Pin_0);
+	GPIO_SetBits(GPIOB , GPIO_Pin_1);
+	Delay(0xfffff);
         Delay(k);
-              
-		/* Read the pot value */
+             
+	/* Read the pot value */
         k = readADC1(ADC_Channel_1);
         
         /* Print the ADC value from the pot, to USART */
