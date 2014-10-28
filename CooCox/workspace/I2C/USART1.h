@@ -1,4 +1,3 @@
-
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x_usart.h"
 
@@ -6,16 +5,14 @@
 void USART1_Putch(unsigned char ch);
 void USART1_Print(char s[]);
 void USART1_Print_Int(int number);
-void USART1_Print_Float(float number);
 void USART1_Init(void);
 
 /* Function definitions ------------------------------------------------------*/
 void USART1_Putch(unsigned char ch)
 {
-	USART_SendData( USART1, ch);
-
-	// Wait until the end of transmision
-	while( USART_GetFlagStatus( USART1, USART_FLAG_TC) == RESET){}
+    USART_SendData(USART1, ch);
+    // Wait until the end of transmision
+    while(USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET){}
 }
 
 
@@ -23,48 +20,32 @@ void USART1_Print(char s[])
 {
     int i=0;
     
-    while( i < 64)
-	{
-	    if( s[i] == '\0') break;
-        USART1_Putch( s[i++]);
+    while(i < 64)
+    {
+        if(s[i] == '\0') break;
+        USART1_Putch(s[i++]);
     }	
 }
 
 
 void USART1_Print_Int(int number)
 {
-	unsigned char s[5], i=1, j=0;
+    unsigned char s[5], i=1, j=0;
 
-    if( number < 0)
+    if(number < 0)
     { 
-    	USART1_Putch( '-');
-		number = -number;
-	}	
+    	USART1_Putch('-');
+	number = -number;
+    }	
  
-    while( number >= 10)
+    while(number >= 10)
     {
-	    s[i++] = number % 10;
-	    number /= 10;
+        s[i++] = number % 10;
+        number /= 10;
     }
     s[i] = number;
     j = i;
-    for( i=j; i>0; i--) USART1_Putch( '0' + s[i]);
-}
-
-
-void USART1_Print_Float(float number)
-{
-    float float_side;
-    int int_side;
-    
-    int_side = number;
-    float_side = number - int_side; 
-    USART1_Print_Int(int_side);
-    USART1_Print(".");
-    
-    /* We only print 2 decimals after quota */
-    if (float_side < 0) float_side *= -1;
-    USART1_Print_Int(float_side * 100);
+    for(i=j; i>0; i--) USART1_Putch('0' + s[i]);
 }
 
 
@@ -74,7 +55,7 @@ void USART1_Init(void)
     USART_InitTypeDef USART_InitStructure;
     
     
-    RCC_APB2PeriphClockCmd( RCC_APB2Periph_GPIOA | RCC_APB2Periph_USART1,ENABLE);
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA | RCC_APB2Periph_USART1,ENABLE);
 
     // PA9 is TX , PA10 is RX
     GPIO_InitStructure.GPIO_Pin = GPIO_Pin_9;	         
