@@ -49,13 +49,13 @@ int main(void)
     GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP; 
     GPIO_Init(GPIOB, &GPIO_InitStructure);
 
-	USART1_Init();
-	USART1_Print("\r\n");
-	USART1_Print("*************************************************************\r\n");
+    USART1_Init();
+    USART1_Print("\r\n");
+    USART1_Print("*************************************************************\r\n");
     USART1_Print("*                                                           *\r\n");
-	USART1_Print("*  Thank you for using MatchboxARM Development Board ! ^_^  *\r\n");
-	USART1_Print("*                                                           *\r\n");
-	USART1_Print("*************************************************************\r\n"); 
+    USART1_Print("*  Thank you for using MatchboxARM Development Board ! ^_^  *\r\n");
+    USART1_Print("*                                                           *\r\n");
+    USART1_Print("*************************************************************\r\n"); 
     
     /* Enable CRC clock */
     RCC_AHBPeriphClockCmd(RCC_AHBPeriph_CRC, ENABLE);
@@ -70,24 +70,24 @@ int main(void)
     
     /* Infinite loop, just toggle leds */
     while(1)
-	{
-		/* LED0-ON LED1-OFF */
-		GPIO_SetBits(GPIOB , GPIO_Pin_0);
+    {
+	/* LED0-ON LED1-OFF */
+	GPIO_SetBits(GPIOB , GPIO_Pin_0);
         GPIO_ResetBits(GPIOB , GPIO_Pin_1);
-		Delay(0xfffff);
-		Delay(0xfffff);
-		Delay(0xfffff);
-		Delay(0xfffff);
-		Delay(0x5ffff);	
+	Delay(0xfffff);
+	Delay(0xfffff);
+	Delay(0xfffff);
+	Delay(0xfffff);
+	Delay(0x5ffff);	
 
-		/* LED0-OFF LED1-ON */
-		GPIO_ResetBits(GPIOB , GPIO_Pin_0);
+	/* LED0-OFF LED1-ON */
+	GPIO_ResetBits(GPIOB , GPIO_Pin_0);
         GPIO_SetBits(GPIOB , GPIO_Pin_1);
-		Delay(0xfffff);
-		Delay(0xfffff);
-		Delay(0xfffff);
-		Delay(0xfffff);
-		Delay(0x5ffff);				
+	Delay(0xfffff);
+	Delay(0xfffff);
+	Delay(0xfffff);
+	Delay(0xfffff);
+	Delay(0x5ffff);				
     }
 }
 
