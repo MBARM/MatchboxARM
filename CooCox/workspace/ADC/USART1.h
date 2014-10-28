@@ -11,10 +11,9 @@ void USART1_Init(void);
 /* Function definitions ------------------------------------------------------*/
 void USART1_Putch(unsigned char ch)
 {
-	USART_SendData( USART1, ch);
-
-	// Wait until the end of transmision
-	while( USART_GetFlagStatus( USART1, USART_FLAG_TC) == RESET){}
+    USART_SendData( USART1, ch);
+    // Wait until the end of transmision
+    while( USART_GetFlagStatus( USART1, USART_FLAG_TC) == RESET){}
 }
 
 
@@ -23,8 +22,8 @@ void USART1_Print(char s[])
     int i=0;
     
     while( i < 64)
-	{
-	    if( s[i] == '\0') break;
+    {
+        if( s[i] == '\0') break;
         USART1_Putch( s[i++]);
     }	
 }
@@ -32,18 +31,18 @@ void USART1_Print(char s[])
 
 void USART1_Print_Int(int number)
 {
-	unsigned char s[5], i=1, j=0;
+    unsigned char s[5], i=1, j=0;
 
     if( number < 0)
     { 
     	USART1_Putch( '-');
-		number = -number;
-	}	
+    	number = -number;
+    }	
  
     while( number >= 10)
     {
-	    s[i++] = number % 10;
-	    number /= 10;
+        s[i++] = number % 10;
+	number /= 10;
     }
     s[i] = number;
     j = i;
