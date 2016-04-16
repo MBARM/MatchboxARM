@@ -1,7 +1,6 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x.h"
-#include "math.h"
 #include "USART3.h"
 
 /* Private function prototypes -----------------------------------------------*/  
