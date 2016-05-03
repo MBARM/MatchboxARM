@@ -18,6 +18,10 @@ int main(void)
 	In fisierul mb.c am adaugat la linia 61:
 	    >> extern volatile u8 Modbus_Request_Flag;
   ca sa faca referire la definitia din acest fisier a variabilei flag pentru cererile modbus
+  
+  RMMS settings
+  Timeout (ms) 1000
+  Delay between pools (ms) 200
 */	
     GPIO_InitTypeDef GPIO_InitStructure;
 
